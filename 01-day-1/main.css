@@ -23,3 +23,73 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.number {
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+.one-vertical,
+.one-line {
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.one-vertical {
+    z-index: 20;
+    left: 0;
+    width: 25px;
+    height: 100px;
+}
+
+.one-line {
+    z-index: 1;
+    left: -16px;
+    width: 21px;
+    height: 40px;
+    transform: rotate(50deg);
+}
+
+.zero-first,
+.zero-second {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 25px solid #fff;
+    top: 0;
+    left: 17px;
+    border-radius: 50%;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.zero-first {
+    z-index: 10;
+}
+
+.zero-second {
+    z-index: 5;
+    left: 100px;
+}
+
+.small-text,
+.large-text {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.small-text {
+    font-size: 25px;
+    line-height: 20px;
+}
+
+.large-text {
+    margin-top: 6px;
+    font-size: 82px;
+    line-height: 64px;
+}
